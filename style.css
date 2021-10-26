@@ -80,3 +80,51 @@ ul {
   gap: 0.5rem;
   justify-content: center;
 }
+
+/* Animações */
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.stamp {
+  animation: loading 8s linear infinite;
+}
+
+#userImage {
+  transition: all ease 1s;
+}
+
+#userImage:hover {
+  width: 11.5rem;
+  height: 13rem;
+}
+
+.social-btn {
+  position: relative;
+  border-radius: 0.25rem;
+  width: 50px;
+  top: 0;
+  transition: all ease 0.3s;
+}
+.social-btn:hover {
+  border-radius: 50%;
+  top: -8px;
+}
+
+.linkedin-img:hover {
+  box-shadow: 0rem 5px 15px rgba(0, 172, 238, 0.5);
+}
+
+.facebook-img:hover {
+  box-shadow: 0rem 5px 15px rgba(40, 103, 178, 0.5);
+}
+
+.instagram-img:hover {
+  box-shadow: 0rem 5px 15px rgba(247, 55, 55, 0.5);
+}
